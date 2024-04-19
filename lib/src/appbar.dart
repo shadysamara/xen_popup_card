@@ -52,8 +52,8 @@ class XenCardAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // size
-    final size = MediaQuery.sizeOf(context);
-    
+    final size = MediaQuery.of(context).size;
+
     return Container(
       // padding
       padding: padding ?? const EdgeInsets.all(20),
